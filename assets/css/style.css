@@ -372,3 +372,27 @@ video{
 #shop .navVertical li:nth-of-type(5) a{
     opacity: 100%;
 }
+
+/* ----------- subsribe.html --------------- */
+
+.subscribeContainer{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 60% 40%;
+}
+
+.subscribeContainer .itemLeft{
+    background: url(../img/section-about-1.jpg) no-repeat center/cover;
+}
+
+.subscribeContainer .itemRight{
+    display: grid;
+    justify-items: start;
+    padding-left: 80px;
+    
+}
+
+.subscribeContainer .itemRight h2{
+    margin-top: 50px;
+}
+
