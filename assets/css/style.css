@@ -1,6 +1,3 @@
-
-/* Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) */
-/* font-family: 'Work Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;800&display=swap');
 
 *{
@@ -9,7 +6,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     color: rgb(234, 204, 194);
     font-weight: 300;
 }
@@ -275,11 +272,8 @@ video{
     padding-right: 40px;
 }
 
-.inspirationContainer h1{
-    margin: unset;
-    padding: unset;
-    word-spacing: unset;
-    letter-spacing: unset;
+.inspirationContainer h4{
+    font-size: 2rem;
     margin-bottom: 20px;
     line-height: 33px;
 }
@@ -320,12 +314,12 @@ video{
     grid-column: 2;
 }
 
-figure{
+.rowCPic{
     width: 50%;
     height: 50%;
 }
 
-figure img{
+.rowCPic img{
     width: 100%;
     height: 100%;
 }
