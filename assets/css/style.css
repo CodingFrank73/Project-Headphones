@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-h1, h2{
+h1, h2, h3{
     color: rgb(234, 204, 194);
     font-weight: 300;
 }
@@ -114,7 +114,7 @@ aside{
 }
 
 
-/* ---------- main --------------- */
+/* ---------- index.html --------------- */
 
 #indexMain{
     border: 1px solid pink;
@@ -154,12 +154,14 @@ h1{
     width: 50%;
 }
 
-div{
+
+.rowDiscription{
     padding-left: 10%;
 }
 
 
-/* ----------- Lounger --------------- */
+
+/* ----------- lounger.html --------------- */
 
 .loungerContainer{
     display: grid;
@@ -228,22 +230,91 @@ div{
 }
 
 
-/* ------------ Inspiration -------------- */
+/* ------------ inspiration.html -------------- */
 
 .inspirationContainer{
-    border: 1px solid pink;
     display: grid;
-    /* grid-template-columns: 20% 20% 20% 20% 20%; */
-    grid-template-rows: repeat(4, 25%)
+    grid-template-columns: 20% 64% 1fr;
+    grid-template-rows: 40% 12% 41% 1fr;
 }
 
+video{
+    width: 100%;
+    margin: 25vh 0vh 45vh 0vh;
+    padding-left: 20px;
+    padding-right: 40px;
+}
 
+.inspirationContainer h1{
+    margin: unset;
+    padding: unset;
+    word-spacing: unset;
+    letter-spacing: unset;
+    margin-bottom: 20px;
+    line-height: 33px;
+}
 
+.inspirationContainer h3{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
 
+.inspirationContainer .rowA{
+    grid-column: 2;
+}
 
+.inspirationContainer .rowB{
+    grid-column: 2;
+}
 
+.fakeBtn {
+    display: flex;
+    justify-content: start;
+    gap: 4px;
+}
 
-/* ----------- Shop --------------- */
+.fakeBtn p{
+    border: 2px solid #fff;
+    opacity: 70%;
+    border-radius: 10%;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    padding: 3px 10px;
+}
+
+.inspirationContainer .rowC{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    grid-column: 2;
+}
+
+figure{
+    width: 50%;
+    height: 50%;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.rowDiscription{
+    padding: 0 50px 0 15px;
+    width: 50%;
+    align-self: center;
+}
+
+.rowDiscription p{
+    line-height: 25px;
+}
+
+#inspiration .navVertical li:nth-of-type(4) a{
+    opacity: 100%;
+}
+
+/* ----------- shop.html --------------- */
 
 .shopContainer{
     display: grid;
