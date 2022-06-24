@@ -1,35 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'WorkSans-VariableFont';
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     color: rgb(234, 204, 194);
     font-weight: 300;
 }
 
-p{
+p,
+label {
     color: rgb(115, 115, 115);
     font-weight: 300;
 }
 
-a{
+a {
     color: #867772;
     text-decoration: none;
 }
 
-body{
+body {
     display: grid;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'WorkSans-VariableFont';
     background-color: #2e2e2e;
 }
 
-/* ------ header ------ */
+label {
+    display: block;
+    margin-bottom: 2px;
+}
 
-header{
+input,
+select,
+textarea {
+    width: 70%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border-color: transparent;
+    outline: none;
+}
+
+
+/* ------ header ------ */
+header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -37,7 +60,7 @@ header{
     align-items: center;
 }
 
-header ul{
+header ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -45,27 +68,28 @@ header ul{
     margin-right: 85px;
 }
 
-header li:nth-of-type(4), li:nth-of-type(1){
+header li:nth-of-type(4),
+li:nth-of-type(1) {
     margin-right: 30px;
 }
 
-header a{
+header a {
     font-size: .7rem;
     font-weight: 400;
     transition: all 1s linear;
 }
 
-header a:hover{
+header a:hover {
     text-decoration: underline;
     color: rgb(234, 204, 194);
     transition: all 1s linear;
 }
 
-header nav{
+header nav {
     width: 40%;
 }
 
-header img{
+header img {
     height: 35px;
     width: 35px;
     margin-left: 45px;
@@ -75,31 +99,31 @@ header img{
 
 /* ------------- aside ---------------- */
 
-aside{
+aside {
     width: 20%;
     height: 85vh;
     position: fixed;
 }
 
-.navVertical{
+.navVertical {
     margin-top: 260px;
     margin-left: 20px;
     position: relative;
 }
 
-.navVertical ul{
+.navVertical ul {
     list-style: circle;
-    
+
 }
 
-.navVertical li{
+.navVertical li {
     display: flex;
     justify-content: start;
     margin: 50px 0;
     color: #fff;
 }
 
-.navVertical a{
+.navVertical a {
     color: #fff;
     opacity: 50%;
     font-size: .8rem;
@@ -109,12 +133,12 @@ aside{
     padding-top: 10px;
 }
 
-.navVertical a:hover{
+.navVertical a:hover {
     opacity: 100%;
     transition: all 1s linear;
 }
 
-.smallCircle{
+.smallCircle {
     width: 10px;
     height: 10px;
     border: 1px solid rgb(115, 115, 115);
@@ -124,7 +148,7 @@ aside{
     left: 4px;
 }
 
-.bigCircle{
+.bigCircle {
     width: 18px;
     height: 18px;
     border: 1px solid #fff;
@@ -132,7 +156,7 @@ aside{
     position: absolute;
 }
 
-.line{
+.line {
     width: .5px;
     height: 40px;
     border: 1px solid rgb(115, 115, 115);
@@ -142,11 +166,11 @@ aside{
 }
 
 /* ---------- index.html --------------- */
-
-.indexContainer{
+.indexContainer {
     grid-column: 1/6;
 }
-.indexContainer h1{
+
+.indexContainer h1 {
     margin: 21vh 0;
     width: 72%;
     padding-left: 37%;
@@ -155,8 +179,7 @@ aside{
     letter-spacing: 0.2rem;
 }
 
-
-.rowPicTop{
+.rowPicTop {
     margin: 0 auto;
     height: 100vh;
     width: 90%;
@@ -165,130 +188,94 @@ aside{
     background-size: cover;
 }
 
-.containerButton{
+.containerButton {
     margin-top: 200px;
     height: 70vh;
     display: grid;
     grid-template-columns: 20% 35% 1fr;
 }
 
-.containerButton img{
+.containerButton img {
     grid-column: 2/3;
     width: 100%;
     height: 65%;
 }
 
-.containerButton .rowDiscription{
+.containerButton .rowDiscription {
     grid-column: 3;
     padding-left: 10%;
     width: 85%;
     height: 65%;
 }
 
-#index .navVertical li:nth-of-type(1) a{
-    opacity: 100%;
-}
 
 /* ----------- lounger.html --------------- */
-
-.loungerContainer{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 60% 40%;
-}
-
-.loungerContainer .itemLeft{
+#lounger .container .itemLeft {
     background: url(../img/section-voyager.jpg) no-repeat center/cover;
 }
 
-.loungerContainer .itemRight{
-    padding-top: 35%;
-    padding-left: 10%;
-}
-
-.loungerContainer .itemRight h2{
-    font-size: 2.3rem;
-    letter-spacing: .5px;
-    margin-bottom: 13vh;
-}
-
-.loungerContainer .itemRight p{
-    width: 82%;
-    font-weight: 300;
-    line-height: 25px;
-    margin-top: 20px;
-}
-
-#lounger .navVertical li:nth-of-type(2) a{
-    opacity: 100%;
-}
-
 /* ----------- Experience --------------- */
-
-.experienceContainer{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 60% 40%;
-}
-
-.experienceContainer .itemLeft{
+#experience .container .itemLeft {
     background: url(../img/section-experience-1.jpg) no-repeat center/cover;
 }
 
-.experienceContainer .itemRight{
-    padding-top: 35%;
-    padding-left: 10%;
+/* ----------- subsribe.html --------------- */
+#subscribe .container .itemLeft {
+    background: url(../img/section-about-1.jpg) no-repeat center/cover;
 }
 
-.experienceContainer .itemRight h2{
-    font-size: 2.3rem;
-    letter-spacing: .5px;
-    margin-bottom: 13vh;
+div label {
+    display: inline;
 }
 
-.experienceContainer .itemRight p{
-    width: 82%;
-    font-weight: 300;
-    line-height: 25px;
-    margin-top: 20px;
+.checkbox {
+    display: inline;
+    width: 1rem;
+    margin: 10px 0;
 }
 
-#experience .navVertical li:nth-of-type(3) a{
-    opacity: 100%;
+.subscribeSubmit {
+    background-color: rgb(234, 204, 194);
+    color: rgb(115, 115, 115);
+    margin-top: 40px;
+    padding: 7px 20px;
 }
 
+.subscribeSubmit:hover {
+    cursor: pointer;
+    background-color: rgba(234, 204, 194, 0.885);
+    color: rgb(73, 71, 71);
+}
 
 /* ------------ inspiration.html -------------- */
-
-.inspirationContainer{
+.inspirationContainer {
     display: grid;
     grid-template-columns: 20% 64% 1fr;
     grid-template-rows: 40% 12% 41% 1fr;
 }
 
-video{
+video {
     width: 100%;
     margin: 25vh 0vh 45vh 0vh;
-    padding-left: 20px;
-    padding-right: 40px;
+    padding: 0 40px 0 20px;
 }
 
-.inspirationContainer h4{
+.inspirationContainer h4 {
     font-size: 2rem;
     margin-bottom: 20px;
     line-height: 33px;
 }
 
-.inspirationContainer h3{
+.inspirationContainer h3 {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.inspirationContainer .rowA{
+.inspirationContainer .rowA {
     grid-column: 2;
 }
 
-.inspirationContainer .rowB{
+.inspirationContainer .rowB {
     grid-column: 2;
 }
 
@@ -298,7 +285,7 @@ video{
     gap: 4px;
 }
 
-.fakeBtn p{
+.fakeBtn p {
     border: 2px solid #fff;
     opacity: 70%;
     border-radius: 10%;
@@ -308,61 +295,48 @@ video{
     padding: 3px 10px;
 }
 
-.inspirationContainer .rowC{
+.inspirationContainer .rowC {
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
     grid-column: 2;
 }
 
-.rowCPic{
+.rowCPic {
     width: 50%;
     height: 50%;
 }
 
-.rowCPic img{
+.rowCPic img {
     width: 100%;
     height: 100%;
 }
 
-.rowDiscription{
+.rowDiscription {
     padding: 0 50px 0 15px;
     width: 50%;
     align-self: center;
 }
 
-.rowDiscription p{
+.rowDiscription p {
     line-height: 25px;
 }
 
-#inspiration .navVertical li:nth-of-type(4) a{
-    opacity: 100%;
-}
-
 /* ----------- shop.html --------------- */
-
-.shopContainer{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 60% 40%;
-}
-
-.shopContainer .itemLeft{
+#shop .container .itemLeft {
     background: url(../img/section-composition4.jpg) no-repeat center/cover;
 }
 
-.shopContainer .itemRight{
-    display: grid;
-    justify-items: center;
-    padding-left: 80px;
-    grid-template-rows: 75% 4.8% 5% 2.7% 3% 1fr;
-}
-
-.shopContainer .itemRight img{
+#shop .container .itemRight {
     margin-top: 120px;
+    align-items: center;
 }
 
-.shopContainer .itemRight a{
+#shop .container .itemRight p {
+    padding: 2%
+}
+
+#shop .container .itemRight a {
     background-color: rgb(234, 204, 194);
     color: rgb(115, 115, 115);
     font-size: .7rem;
@@ -370,30 +344,40 @@ video{
     border-radius: 4%;
 }
 
-#shop .navVertical li:nth-of-type(5) a{
+/* ----------- General --------------- */
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 60% 1fr;
+}
+
+.container .itemRight {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+#lounger .itemRight h1,
+#experience .itemRight h1,
+#subscribe .itemRight h1 {
+    padding-top: 40%;
+    margin-bottom: 15%;
+    font-size: 2.3rem;
+    letter-spacing: .5px;
+}
+
+#lounger .itemRight p,
+#experience .itemRight p {
+    width: 83%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+#index .navVertical li:nth-of-type(1) a,
+#lounger .navVertical li:nth-of-type(2) a,
+#experience .navVertical li:nth-of-type(3) a,
+#inspiration .navVertical li:nth-of-type(4) a,
+#shop .navVertical li:nth-of-type(5) a {
     opacity: 100%;
 }
-
-/* ----------- subsribe.html --------------- */
-
-.subscribeContainer{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 60% 40%;
-}
-
-.subscribeContainer .itemLeft{
-    background: url(../img/section-about-1.jpg) no-repeat center/cover;
-}
-
-.subscribeContainer .itemRight{
-    display: grid;
-    justify-items: start;
-    padding-left: 80px;
-    
-}
-
-.subscribeContainer .itemRight h2{
-    margin-top: 50px;
-}
-

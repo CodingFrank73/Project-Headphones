@@ -23,20 +23,23 @@
         </nav>
     </header>
     <Main id="subscribeMain">
-        <section class="subscribeContainer">
-            <figure class="itemLeft">
-            </figure>
+        <section class="container">
+            <figure class="itemLeft"></figure>
             <article class="itemRight">
-
-                <h2>Newsletter</h2>
-                <p>Jetzt Anmelden und jeden Monat über alle Neuigkeiten und Highlights informiert werden.</p>
+                <h1>Sign Up</h1>
                 <form action="">
-                    <label for="txt">Vorname:</label>
-                    <input type="text" name="vorname" id="">
-                    <label for="txt">Nachname:</label>
-                    <input type="text" name="nachname" id="">
-                    <label for="email"> Email:</label>
-                    <input type="email" name="email" id="" placeholder="your Email" required size="15">
+                    <label for="fullName">Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="your Name">
+                    <label for="email"> Email</label>
+                    <input type="email" name="email" id="email" placeholder="your Email">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="4"></textarea>
+
+                    <div>
+                        <input type="checkbox" name="mailingList" id="mailingList" class="checkbox" value="0">
+                        <label for="mailingList">Sign up for the mailing list</label>
+                    </div>
+                    <input type="submit" id="submit" class="subscribeSubmit" value="Join Us" onclick="">
                 </form>
             </article>
         </section>
@@ -47,7 +50,6 @@
                 <li>
                     <div>
                         <div class="smallCircle circle"></div>
-
                         <div class="line"></div>
                     </div>
                     <a href="index.html">ABOUT</a>
